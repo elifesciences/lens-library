@@ -123,6 +123,9 @@ var Session = function() {
       url : url(id),
       // jsonp: false, doesn't add ?callback=xy
       jsonpCallback: 'handleDoc',
+      error: function(e) {
+        console.log('ERROR', e);
+      }
     });
   }
 
@@ -135,7 +138,6 @@ var Session = function() {
     // Overwrite global reference, so we can access cb
     handleDocList = function(data) {
       var collection = new Data.Collection(data);
-
       var session = new Ken.Session(collection);
       cb(null, session);
     };

@@ -14,7 +14,7 @@ Lens.ENV = 'production';
 
 // Can optionally be an array specifying a file extension (we need that for static deployment)
 
-Lens.API_URL_PRODUCTION = ['http://cdn.elifesciences.org/documents/elife', '.js'];
+Lens.API_URL_PRODUCTION = ['http://hidden-sea-1357.herokuapp.com/lens', '.js'];
 Lens.API_URL_DEV = 'http://elife-converter.herokuapp.com';
 
 
